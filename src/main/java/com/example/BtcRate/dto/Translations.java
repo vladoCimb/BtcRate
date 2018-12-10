@@ -11,8 +11,10 @@ public class Translations {
 
         RateDto rateDto = new RateDto();
 
+        /*
         rateDto.setId(rateEntity.getId());
         rateDto.setHigh(rateEntity.getLast());
+        */
 
         return rateDto;
     };

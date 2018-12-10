@@ -9,12 +9,11 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @AllArgsConstructor
 @Entity
+@ToString
 public class RateEntity extends AbstractEntity{
     @Column(name = "VALUE", nullable = false)
-    @NonNull
     private long last;
     private long high;
     private long low;
