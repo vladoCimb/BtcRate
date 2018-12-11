@@ -19,14 +19,14 @@ public class RateController {
     @Autowired
     private RateService rateService;
 
-    @RequestMapping(value="",method = RequestMethod.GET)
+    @RequestMapping(value="/all",method = RequestMethod.GET)
     public List<RateEntity> findAll(){
         return rateService.findAll();
     }
 
-    @RequestMapping(value="/last",method = RequestMethod.GET)
-    public RateEntity findLast(){
-        return rateService.findLast();
+    @RequestMapping(value="",method = RequestMethod.GET)
+    public List<RateEntity> findLastTwo(){
+        return rateService.findLastTwo();
     }
 
 
