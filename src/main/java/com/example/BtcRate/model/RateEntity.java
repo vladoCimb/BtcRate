@@ -9,17 +9,26 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @ToString
+@Entity
+@Table(name="RATES")
 public class RateEntity extends AbstractEntity{
-    @Column(name = "VALUE", nullable = false)
+    @Column(name = "LAST", nullable = false)
     private double last;
+    @Column(name = "HIGH")
     private double high;
+    @Column(name = "LOW")
     private double low;
+    @Column(name = "AMOUNT")
     private double amount;
+    @Column(name = "BID")
     private double bid;
+    @Column(name = "ASK")
     private double ask;
+    @Column(name = "CHANGE")
     private double change;
+    @Column(name = "OPEN")
     private double open;
+    @Column(name = "TIMESTAMP")
     private double timestamp;
 }
